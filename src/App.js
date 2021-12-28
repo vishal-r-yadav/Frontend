@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
+import {BrowserRouter as Router,Routes,Route,} from 'react-router-dom';
+import GetAllPolicy from './components/GetAllPolicy';
+import GetPolicy from './components/GetPolicy';
+import AddPolicy from './components/AddPolicy';
+import Home from './components/pages/Home';
+import AdminDashBoard from './components/pages/AdminDashBoard';
+import AdminAddPolicy from './components/pages/AdminAddPolicy';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      
+    <Router>
+   <Routes>
+   <Route path = '/'element = {<Home/>}/>
+   <Route path = '/admindashboard'element = {<AdminDashBoard/>}/>
+   <Route path = '/policy/all'element = {<GetAllPolicy/>}/>
+   <Route path = '/policy/:policyId'element = {<GetPolicy/>}/>
+   <Route path = '/addpolicy'element = {<AdminAddPolicy/>}/>
+   </Routes>
+ </Router>
+ </div>
   );
 }
 
