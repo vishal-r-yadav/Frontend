@@ -35,6 +35,7 @@
   }
   
   .addpolicy-container {
+    text-align: left;
     border-radius: 10px;
     background-color: #f2f2f2;
     padding: 20px;

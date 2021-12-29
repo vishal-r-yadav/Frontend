@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
+import './ViewPolicyHolder.css';
 
 
 function ViewPolicyHolder() {
@@ -17,23 +18,23 @@ function ViewPolicyHolder() {
             {
                 policyHolder.length > 0 ?
 
-                    <table class="table table-bordered table-dark">
-                        <thead>
+                    <table  class="table table-bordered">
+                        <thead class = "thead-light">
                             <tr>
-                                <th>policyHolder Id</th>
-                                <th>holderName</th>
-                                <th>premiumType </th>
-                                <th>annualIncome </th>
-                                <th>startDate</th>
+                                <th> Id</th>
+                                <th> Name</th>
+                                <th>Premium Type </th>
+                                <th>Annual Income </th>
+                                <th>Start Date</th>
                                 <th>End Date</th>
                                 <th>Amount</th>
-                                <th>PaymentDate</th>
-                                <th>RenewPolicy</th>
+                                <th>Payment Date</th>
+                                <th>Renew Policy</th>
                           
                                
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class ="table ">
                             {policyHolder.map(p =>
                                 <tr>
                                     <td>{p.policyHolderId}</td>
@@ -42,9 +43,9 @@ function ViewPolicyHolder() {
                                     <td>{p.annualIncome}</td>
                                     <td>{p.startDate}</td>
                                     <td>{p.endDate}</td>
-                                    <td>{p.amount}</td>
-                                    <td>{p.paymentDate}</td>     
-                                    {/* <td><Link to={`/policyHolder/GetPolicyHolder/${p.policyHolderId}`}>Renew</Link></td> */}
+                                    <td>{p.transactionDetails.amount}</td>
+                                    <td>{p.transactionDetails.paymentDate}</td>     
+                                    <td><Link to={`/policyHolder/GetPolicyHolder/${p.policyHolderId}`}>Renew</Link></td>
                                     {/* <td><Link to={`/policy/Transaction/${p.transactionId}`}>Payment</Link></td> */}
                                 </tr>
                             )}

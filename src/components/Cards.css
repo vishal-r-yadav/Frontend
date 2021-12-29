@@ -1,4 +1,5 @@
 .cards {
+    margin: 0rem;
     padding: 100px;;
     background: #fff;
   }
@@ -9,6 +10,7 @@
   }
   
   .cards__container {
+    justify-content: space-between;
     display: flex;
     flex-flow: column;
     align-items: left;
@@ -19,7 +21,7 @@
   
   .cards__wrapper {
     position: relative;
-    margin: 50px 0 45px;
+    margin: 80px 0 45px;
   }
   
   .cards__items {
@@ -31,7 +33,8 @@
       object-fit: cover;
     display: flex;
     flex: 1;
-    margin: 0 1rem;
+    justify-content: space-between;
+    margin: 0.5rem;
     border-radius: 5px;
   }
   
@@ -49,6 +52,7 @@
   
   .cards__item__pic-wrap {
     position: relative;
+    height: 100%;
     width: 100%;
     padding-top: 100%;
     overflow: hidden;
@@ -65,7 +69,7 @@
     bottom: 0;
     margin-left: 10px;
     padding: 6px 8px;
-    max-width: calc((100%) - 60px);
+    max-width: calc((200%) - 60px);
     font-size: 12px;
     font-weight: 700;
     color: #fff;

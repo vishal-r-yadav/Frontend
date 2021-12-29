@@ -14,8 +14,8 @@ function GetAllPolicy(){
                {
                    policies.length >0 ?
                     
-               <table class="table table-bordered table-dark">
-                 <thead>
+               <table class="table table-bordered ">
+                 <thead class = "thead-light">
                    <tr>
                      <th>Policy Id</th>
                      <th>Policy Name</th>

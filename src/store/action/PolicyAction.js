@@ -3,7 +3,7 @@ import axios from 'axios';
 
 export function getAll(){
     return (dispatch) => {
-    return axios.get('http://localhost:8080/healthinsurance-policy/policy/all')
+    return axios.get('http://localhost:8080/healthinsurance/policy/all')
     .then (resp=> {
         dispatch(getAllSuccess(resp.data))
     })
@@ -22,7 +22,7 @@ export function getAllSuccess (data){
 }
 export function getPolicyDetails(policyId){
     return (dispatch)=>{
-        return axios.get("http://localhost:8080/healthinsurance-policy/policy/"+policyId)
+        return axios.get("http://localhost:8080/healthinsurance/policy/"+policyId)
         .then (resp=>{
             dispatch(getPolicySuccess(resp.data))
         })

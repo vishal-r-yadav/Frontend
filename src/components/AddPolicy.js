@@ -36,7 +36,7 @@ function AddPolicy() {
 
     return (
         <>
-        <h1 className="heading">Add Policy</h1>
+        <h1>Add Policy</h1>
         <div className="addpolicy-container">
             <form action="/action_page.php">
                 <div class="row">
