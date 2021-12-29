@@ -20,9 +20,11 @@
   }
   
   .navbar-logo {
-    color: #fff;    
-    justify-self: start;
-    margin-left: 20px;
+    
+    text-align: center;
+    color: #fff;  
+    justify-content: center;  
+    justify-self: center;
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
@@ -36,13 +38,14 @@
   }
   
   .nav-menu {
+    align-items: center;
     display: grid;
     grid-template-columns: repeat(4, auto);
     grid-gap: 10px;
     list-style: none;
     text-align: center;
     width: 60vw;
-    justify-content: end;
+    justify-content:center;
     margin-right: 2rem;
   }
   
@@ -116,6 +119,7 @@
   
     .navbar-logo {
       position: absolute;
+      padding-bottom: 20px;
       top: 0;
       left: 0;
       transform: translate(25%, 50%);

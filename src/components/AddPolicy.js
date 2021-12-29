@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './AddPolicy.css';
-import { Button } from './Button';
 
 function AddPolicy() {
 
@@ -36,6 +35,8 @@ function AddPolicy() {
 
 
     return (
+        <>
+        <h1 className="heading">Add Policy</h1>
         <div className="addpolicy-container">
             <form action="/action_page.php">
                 <div class="row">
@@ -91,7 +92,7 @@ function AddPolicy() {
 
                 <div class="row">
                    
-                    <button onClick={handlesubmit}><Button buttonStyle='btn--outline'>Add Policy</Button></button>
+                    <button onClick={handlesubmit}>Add Policy</button>
 
                 </div>
 
@@ -99,6 +100,7 @@ function AddPolicy() {
 
             </form >
         </div >
+        </>
     )
 }
 export default AddPolicy;

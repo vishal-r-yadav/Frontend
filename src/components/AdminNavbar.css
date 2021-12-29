@@ -2,7 +2,7 @@
     background: #171718;
     height: 80px;
     display: flex;
-    justify-content: left;
+    justify-content:flex-end;
     align-items:left ;
     font-size: 1.2rem;
     position: sticky;
@@ -26,7 +26,7 @@
     list-style: none;
     text-align: left;
     width: 100vw;
-    justify-content:start;
+    justify-content:flex-end;
     margin-left: 1rem;
   }
   .admin-menu-end {
@@ -41,8 +41,8 @@
   }
   
   .nav-item {
-      justify-content:baseline;
-      text-align: left;
+      justify-content:end;
+      text-align:right;
     height: 80px;
   }
   .nav-item-end {

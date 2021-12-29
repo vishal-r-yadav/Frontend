@@ -10,7 +10,7 @@ function GetAllPolicy(){
     useEffect(()=> dispatch(getAll()),[])
     return (
         <div>
-            <h2>All Policies</h2>
+            <h2 className="heading">All Policies</h2>
                {
                    policies.length >0 ?
                     

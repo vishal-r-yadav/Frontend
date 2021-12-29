@@ -55,7 +55,7 @@ function AdminNavbar() {
                      View PolicyHolders
                    </Link>
                  </li>
-                 <ul className="admin-menu-end">
+                 {/* <ul className="admin-menu-end">
                  <li className='nav-item-end'>
                    <Link to = '/viewUser'
                     className='admin-nav-links'
@@ -64,7 +64,7 @@ function AdminNavbar() {
                      Hello Admin
                    </Link>
                  </li>
-                 </ul>
+                 </ul> */}
                            
                 
                </ul>

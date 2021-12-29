@@ -1,0 +1,6 @@
+.heading{
+    justify-content: flex-start;
+    align-items:flex-start;
+    text-align:left;
+    margin-left: 3.5rem;
+  }
